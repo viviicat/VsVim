@@ -78,6 +78,11 @@ type internal CommandUtil
         _lineChangeTracker: ILineChangeTracker
     ) =
 
+    /// The option for peeking when clicking to go to a definition.
+    /// From Microsoft.VisualStudio.Text.EditorDefaultWpfViewOptions.ClickGoToDefOpensPeekId
+    /// This was introduced in v15, so recreating so we don't need to drop v14.
+    static let ClickGoToDefOpensPeekId = new EditorOptionKey<bool>("TextView/ClickGoToDefOpensPeek")
+
     let _vimTextBuffer = _vimBufferData.VimTextBuffer
     let _wordUtil = _vimBufferData.WordUtil
     let _wordNavigator = _vimTextBuffer.WordNavigator
@@ -1498,7 +1503,7 @@ type internal CommandUtil
     /// Go to the definition of the word under the mouse
     member x.GoToDefinitionUnderMouse () =
         if x.MoveCaretToMouseUnconditionally() then
-            match EditorOptionsUtil.GetOptionValue _options DefaultWpfViewOptions.ClickGoToDefOpensPeekId with
+            match EditorOptionsUtil.GetOptionValue _options ClickGoToDefOpensPeekId with
                 | Some true -> x.PeekDefinition()
                 | _ -> x.GoToDefinition()
         else

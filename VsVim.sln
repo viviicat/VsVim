@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VimApp", "Src\VimApp\VimApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanVsix", "Src\CleanVsix\CleanVsix.csproj", "{04DA2433-0F43-42C0-AD53-DAA7F1B22E2D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vs2015", "Src\VsSpecific\Vs2015\Vs2015.csproj", "{D8EB4054-F9EB-45DE-B07F-254E253028E7}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vs2017", "Src\VsSpecific\Vs2017\Vs2017.csproj", "{4BBEC6CF-089E-4F22-8649-5144388C655D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vs2019", "Src\VsSpecific\Vs2019\Vs2019.csproj", "{80595422-09E0-40AC-9573-1A1D210B04F3}"
@@ -72,6 +74,8 @@ Global
 		Src\VimSpecific\VimSpecific.projitems*{80595422-09e0-40ac-9573-1a1d210b04f3}*SharedItemsImports = 5
 		Src\VsSpecific\VsSpecific\VsSpecific.projitems*{80595422-09e0-40ac-9573-1a1d210b04f3}*SharedItemsImports = 5
 		Src\VimSpecific\VimSpecific.projitems*{8db1c327-21a1-448b-a7a1-23eef6baa785}*SharedItemsImports = 5
+		Src\VimSpecific\VimSpecific.projitems*{d8eb4054-f9eb-45de-b07f-254e253028e7}*SharedItemsImports = 5
+		Src\VsSpecific\VsSpecific\VsSpecific.projitems*{d8eb4054-f9eb-45de-b07f-254e253028e7}*SharedItemsImports = 5
 		Src\VimSpecific\VimSpecific.projitems*{de7e4031-d2e8-450e-8558-f00a6f19fa5c}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -278,6 +282,29 @@ Global
 		{04DA2433-0F43-42C0-AD53-DAA7F1B22E2D}.ReleaseMac|Mixed Platforms.Build.0 = Release|Any CPU
 		{04DA2433-0F43-42C0-AD53-DAA7F1B22E2D}.ReleaseMac|x86.ActiveCfg = Release|Any CPU
 		{04DA2433-0F43-42C0-AD53-DAA7F1B22E2D}.ReleaseMac|x86.Build.0 = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Debug|x86.Build.0 = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.DebugMac|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.DebugMac|Any CPU.Build.0 = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.DebugMac|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.DebugMac|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.DebugMac|x86.ActiveCfg = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.DebugMac|x86.Build.0 = Debug|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Release|x86.ActiveCfg = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.Release|x86.Build.0 = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.ReleaseMac|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.ReleaseMac|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.ReleaseMac|Mixed Platforms.Build.0 = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.ReleaseMac|x86.ActiveCfg = Release|Any CPU
+		{D8EB4054-F9EB-45DE-B07F-254E253028E7}.ReleaseMac|x86.Build.0 = Release|Any CPU
 		{4BBEC6CF-089E-4F22-8649-5144388C655D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4BBEC6CF-089E-4F22-8649-5144388C655D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BBEC6CF-089E-4F22-8649-5144388C655D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
