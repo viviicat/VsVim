@@ -423,7 +423,7 @@ type ICommonOperations =
     /// be generated as appropriate
     abstract GoToDefinition: unit -> Result
 
-    /// Attempt to PeekDefinition on the current state of the buffe.  If this operation fails, an error message will
+    /// Attempt to PeekDefinition on the current state of the buffer.  If this operation fails, an error message will
     /// be generated as appropriate
     abstract PeekDefinition: unit -> Result
 
