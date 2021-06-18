@@ -148,6 +148,12 @@ namespace Vim.UnitTest.Mock
             return GoToDefinitionReturn;
         }
 
+        bool IVimHost.PeekDefinition()
+        {
+            GoToDefinitionCount++;
+            return GoToDefinitionReturn;
+        }
+
         bool IVimHost.NavigateTo(VirtualSnapshotPoint point)
         {
             return NavigateToFunc(point);

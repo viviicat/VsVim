@@ -1,5 +1,4 @@
-﻿extern alias VsVim2015;
-extern alias VsVim2017;
+﻿extern alias VsVim2017;
 extern alias VsVim2019;
 using System;
 using System.Collections.Generic;
@@ -97,7 +96,6 @@ namespace Vim.VisualStudio.UnitTest
             internal static readonly Assembly VsVimShared = typeof(VsVimHost).Assembly;
             internal static readonly Assembly VsInterfaces = typeof(ISharedService).Assembly;
             internal static readonly Assembly VsVim = typeof(ISharedService).Assembly;
-            internal static readonly Assembly VsVim2015 = typeof(VsVim2015::Vim.VisualStudio.Specific.SharedService).Assembly;
             internal static readonly Assembly VsVim2017 = typeof(VsVim2017::Vim.VisualStudio.Specific.SharedService).Assembly;
             internal static readonly Assembly VsVim2019 = typeof(VsVim2019::Vim.VisualStudio.Specific.SharedService).Assembly;
 
@@ -120,7 +118,6 @@ namespace Vim.VisualStudio.UnitTest
                     yield return assembly;
                 }
 
-                yield return VsVim2015;
                 yield return VsVim2017;
                 yield return VsVim2019;
             }
@@ -326,12 +323,6 @@ namespace Vim.VisualStudio.UnitTest
 
             Assert.True(count >= 8);
             Assert.Empty(badList);
-        }
-
-        [Fact]
-        public void Ensure2015()
-        {
-            ValidateSpecific(VsVersion.Vs2015, AssemblyData.GetTransitiveReferenceData(AssemblyData.VsVim2015));
         }
 
         [Fact]
